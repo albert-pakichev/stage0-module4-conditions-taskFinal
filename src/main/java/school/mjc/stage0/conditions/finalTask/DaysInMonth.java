@@ -5,6 +5,7 @@ public class DaysInMonth {
         int days=0;
         boolean isLeapYear = ((year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0)));
         if (month == 4 || month == 6 || month == 9 || month == 11) {
+            days = 30;
             System.out.println(days);
         } else if (month == 2) {
             days = (isLeapYear) ? 29 : 28;
